@@ -5,8 +5,9 @@ export type Course = {
   title: string
   summary: string
   duration_minutes: number
-  level: 'Beginner' | 'Intermediate' | 'Advanced'
+  level: string
   icon: string
+}
 }
 export default function CourseCard({ c }: { c: Course }) {
   return (
