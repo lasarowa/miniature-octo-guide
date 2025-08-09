@@ -1,23 +1,24 @@
 {
   "name": "flow15",
-  "version": "0.1.0"
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3000",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 3000",
-    "lint": "next lint",
-    "postinstall": "sh -c 'node -v'",
-    "dx:setup": "tsx scripts/setup.ts",
-    "db:types": "supabase gen types typescript --project-id \"$SUPABASE_PROJECT_ID\" --schema public > lib/database.types.ts"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@mux/mux-player-react": "^3.1.0",
-    "@supabase/ssr": "^0.5.1",
-    "@supabase/supabase-js": "^2.45.4",
-    "clsx": "^2.0.0",
-    "date-fns": "^3.6.0",
-    "lucide-react": "^0.474.0",
+    "@clerk/nextjs": "^4.30.6",
+    "@mux/mux-node": "^7.4.2",
+    "@mux/mux-player-react": "^2.4.2",
+    "@mux/mux-video-react": "^1.8.1",
+    "@stripe/stripe-js": "^2.4.0",
+    "autoprefixer": "10.4.19",
+    "axios": "^1.6.8",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "0.474.0",
     "next": "14.2.5",
     "next-sitemap": "^4.2.3",
     "react": "18.3.1",
@@ -28,21 +29,17 @@
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.23.8"
-    "class-variance-authority": "^0.7.0",
   },
   "devDependencies": {
-    
     "@types/node": "20.9.0",
     "@types/react": "18.2.66",
     "@types/react-dom": "18.2.22",
-    "autoprefixer": "10.4.19",
     "eslint": "8.57.0",
     "eslint-config-next": "14.2.5",
     "postcss": "8.4.38",
     "tailwindcss": "3.4.7",
-    "tsx": "4.16.2",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
     "typescript": "5.5.4"
-
-
   }
 }
